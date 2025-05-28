@@ -51,5 +51,5 @@ learning more about Css Grid, when to use it and when not to and also improve on
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor -(https://www.frontendmentor.io/profile/kelvin9a)
+- Twitter -(https://www.twitter.com/Obiofweb3)

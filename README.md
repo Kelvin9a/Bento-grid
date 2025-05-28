@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://kelvin9a.github.io/Bento-grid/)
+  
 
 ## My process
   I Started the project with Deskstop first design. Used css grid which made my work alot easier to style and really helped in responsive design of the project.
@@ -50,6 +50,5 @@ learning more about Css Grid, when to use it and when not to and also improve on
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor -(https://www.frontendmentor.io/profile/kelvin9a)
 - Twitter -(https://www.twitter.com/Obiofweb3)

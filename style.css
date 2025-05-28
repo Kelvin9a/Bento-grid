@@ -1,0 +1,328 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+    /* overflow: hidden; */
+  }
+  
+  /* 3. Enable keyword animations */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      interpolate-size: allow-keywords;
+    }
+  }
+  
+  body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 6. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 7. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 8. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 9. Improve line wrapping */
+   p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  } 
+
+  
+  :root{
+     --LightPurple:hsl(254, 88%, 90%);
+     --DarkPurple: hsl(256, 67%, 59%);
+     --LightYellow: hsl(31, 66%, 93%);
+     --DarkYellow:  hsl(39, 100%, 71%);
+     --White: hsl(0, 0%, 100%);
+     --Black:  hsl(0, 0%, 7%);
+     --font-family: "DM Sans", sans-serif;
+     --Font-weight1: 400;
+     --Font-weight2:500;
+     --border-radius:10px;
+     --Font-size1:3.4rem;                      
+     --Font-size2:2rem; 
+     --Font-size3:1.7rem; 
+  }
+
+   body{
+    background-color: whitesmoke;
+  }
+   
+  .Container{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1.2fr 1.3fr 0.5fr 1fr 0.2fr 1fr 1fr;
+   grid-template-areas: "sidebar1 main main sidebar3"
+   "sidebar1 main main sidebar3"
+   "sidebar1 content1 content2 sidebar3"
+    "sidebar2 content1 content2 sidebar3"
+   "sidebar2 content1 content2 sidebar3"
+   "sidebar2 content3 content4 content4"
+   "sidebar2 content3 content4 content4"
+   
+   ;
+    width: 950px;
+    height: 750px;
+    grid-gap:1.5rem;
+    margin: 35px auto;
+    padding: 5px 20px;
+  }
+  
+ 
+ 
+
+  .sidebar1{
+    grid-area: sidebar1;
+    color: var(--Black);
+    background-color: var(--LightYellow);
+    font-family: var(--font-family);
+    font-weight: var(--Font-weight2);
+    font-style: normal ;
+    font-size: var(--Font-size2);
+    padding-top: 59px;
+    padding-left: 20px;
+    line-height: 1.9rem;
+    border-radius: var(--border-radius);
+    letter-spacing: var(--Letter-spacing);
+  }
+  
+   #quicker{
+    color: var(--DarkPurple);
+    font-style: italic;
+   }
+
+   #create-post-image{
+      padding-right: 35px;
+       padding-top: 20px;
+       width: fit-content;
+   }
+
+  .sidebar2{
+     grid-area:sidebar2;
+     color: var(--Black);
+     background-color: var(--DarkYellow);
+     font-family: var(--font-family);
+     font-size: var(--Font-size2);
+     font-weight: var(--Font-weight2);
+     padding-top: 25px;
+     padding-left: 20px;
+     line-height: 2rem;
+     border-radius: var(--border-radius);
+     letter-spacing:var(--Letter-spacing);
+     
+     
+  }
+
+ 
+ 
+    #sidebar2-image{
+      padding-right: 10px;
+       padding-top: 50px;
+       width:fit-content;
+    }
+
+  .main{
+    grid-area: main;
+    color: var(--White);
+    background-color: var(--DarkPurple);
+    place-items: center;
+    padding-top: 40px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-size: var(--Font-size1);
+    font-weight: var(--Font-weight1);
+    border-radius: var(--border-radius);
+    letter-spacing: var(--Letter-spacing);
+    
+  }
+   
+  #num{
+    color: var(--DarkYellow);
+  }
+
+   #Faster{
+     font-style: italic;
+   }
+
+   #Social-media-text{
+       padding-left: 45px;
+       line-height: 3rem;
+     }
+
+   #fivestar-text{
+      color: rgba(245, 245, 245, 0.856);
+      font-size: 1.125rem;       /* Note 1.125rem is equivalent to 18px */
+   }
+
+   #fivestar-wrap{
+     padding-top: 10px;
+   }
+
+  .content1{
+    grid-area: content1;
+    color: var(--Black);
+    background-color: var(--White);
+    font-size: var(--Font-size3);
+    font-family: var(--font-family);
+    font-weight: var(--Font-weight2);
+    line-height: 1.45rem;
+    /* padding: 20px 25px; */
+    border-radius: var(--border-radius);
+    letter-spacing: var(--Letter-spacing);
+    overflow: hidden;
+  }
+
+   #content1-image{
+    padding-left: 19px;
+    padding-top: 15px;
+    width:133%;
+}
+   
+   #content1-ptag{
+    padding-left: 20px;
+    padding-top: 25px;
+   } 
+
+
+  .content2{
+    grid-area: content2;
+    color: var(--Black);
+    background-color: var(--DarkYellow);
+    font-family: var(--font-family);
+    font-size: var(--Font-size3);
+    font-weight:var(--Font-weight2);
+    line-height: 1.5rem;
+    padding: 0px 20px;
+    border-radius: var(--border-radius);
+    letter-spacing: var(--Letter-spacing);
+    overflow-y: hidden;
+  }
+
+  #content2-ptag{
+    padding-top: 19px;
+  }
+
+    #content2-image{
+      padding-top: 17px;
+      width: fit-content;
+    } 
+
+  .content3{
+    grid-area: content3;
+    color: var(--Black);
+    background-color: var(--White);
+    font-family:var(--font-family) ;
+    font-size:var(--Font-size1) ;
+    font-weight: var(--Font-weight2);
+    position: relative;
+    border-radius: var(--border-radius);
+   ;
+  }
+
+   #content3-num{
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 20px;
+   }
+
+  #content3-text{
+    color: hsla(0, 0%, 7%, 0.76); 
+    font-size: 1rem;
+    padding-top:10px;
+    padding-left: 15px;
+  }
+
+  #content3-image{
+   width: 76%;
+   padding-top: 20px;
+    padding-left: 15px;
+  }
+
+ 
+
+  .content4{
+    grid-area: content4;
+    display: flex;
+    justify-content: center;
+    background-color: var(--DarkPurple);
+    font-family: var(--font-family);
+    font-size:var(--Font-size2) ;
+    font-weight: var(--Font-weight2);
+    letter-spacing: var(--Letter-spacing);
+    line-height: 2rem;
+    color: var(--White);
+    border-radius: var(--border-radius);
+  }
+
+  #content4-image{
+    width: 45%;
+    padding-top: 20px;
+ }
+
+  #content4-text{
+    padding-top:55px ;
+  }
+
+  .sidebar3{
+    grid-area: sidebar3;
+    color: var(--Black);
+    padding-left: 25px;
+    padding-top: 40px;
+    background-color: var(--LightPurple);
+    font-family: var(--font-family);
+    border-radius: var(--border-radius);
+    font-weight: var(--Font-weight2);
+    font-style: normal;
+    font-size: var(--Font-size3);
+    line-height: 1.4rem;
+    letter-spacing: -1px;
+  }
+
+  #schedule-image {
+    width: fit-content;
+    padding-top: 25px;
+    height: 265px;
+  }
+
+  #ptag{
+     color: hsla(0, 0%, 7%, 0.76); 
+     padding-top: 20px;
+     font-size: 1.125rem;
+  }
+   
+
+
+.attribution { 
+  color: var(--White);
+  background-color: var(--DarkPurple);
+  font-size: 1.125rem; text-align: center; 
+  font-family: var(--font-family);
+  width: 800px;
+  height: 65px;
+  margin: auto;
+  padding: 15px;
+}
+.attribution a { 
+  color: black; 
+  text-decoration: none;
+}

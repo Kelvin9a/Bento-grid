@@ -1,0 +1,177 @@
+ /* Responsive styling */
+   
+ @media (max-width:768px){
+  .Container{
+    display: grid;
+      grid-template-columns:1fr;
+      grid-template-rows:auto;
+      grid-template-areas: "main"
+        "content1"
+        "content2"
+        "sidebar3"
+        "content4"
+        "content3"
+        "sidebar1"
+        "sidebar2"
+       ;
+       width:400px;
+       height: auto;
+       padding: 30px 20px;
+ }
+
+.main{
+   display: grid;
+   place-content: center;
+}
+
+#Social-media-text{
+    font-size: 2.9rem;
+    line-height: 2.7rem;
+
+}
+
+.text-10X-faster{
+     padding-left: 25px;
+      word-spacing: -30px;
+    
+}
+
+#with-AI-txt{
+    padding-left: 65px;
+}
+  
+  
+#five-star-image{
+    padding-left: 10px;
+}
+   
+#fivestar-wrap{
+    position:relative;
+  padding-bottom: 30px; 
+}
+
+#content1-image{
+    width: 98%;
+    padding-left: 20px;
+}
+ 
+#content1-ptag{
+   font-size: 1.5rem;
+    padding-left: 15px;
+    padding-bottom: 20px;
+} 
+  
+/* .mobile.br is a class name used to make the texts responsive in mobile view. here we are removing the breaks in our texts  destop view , so our text can adjust in mobile view */
+.mobile-br{
+    display: none;
+}
+  
+ .content2{
+   font-size: 1.5rem;
+   height: 218px;
+
+ } 
+
+  #content2-image{
+   padding-top: 12px;
+   width:66% ;
+ } 
+
+ .sidebar3{
+  padding-left: 0px;
+  height: 450px;
+}
+
+#schedule-text{
+  padding-left: 30px;
+}
+
+#schedule-image{
+  position: relative;
+  padding-left: 17px;
+  width: 95%;
+  
+}
+
+
+#ptag{
+  font-size: 19px;
+ padding-left: 49px;
+}
+
+#content-text{
+  padding-left: 9px;
+}
+
+#audience-text{
+  padding-left: 70px;
+}
+
+ .content4{
+  display: inline;
+  place-items: center;
+}
+
+#content4-image{
+    padding-top: 30px;
+   width: 70%;
+ }
+
+ #content4-text{
+  padding-bottom:30px ;
+ }
+
+ #span-word{
+    padding-left: 40px;
+ }
+ 
+
+  
+ #content3-text{
+    padding-left: 20px;
+    font-size: 1.125rem;   /* This font size is equivalent to 18px*/
+ }
+
+  #content3-image{
+     width: 56%;
+     padding-left: 20px;
+     padding-bottom: 20px;
+  }
+
+ .sidebar1{
+    /* font-size: 1.8rem; */
+    padding: 20px 25px;
+   /* font-size: 1.7rem; */
+ }
+   
+ #create-post-image{
+   width: 71%;
+ }
+
+  .sidebar2{
+    font-size:1.9rem;
+  }
+
+  #sidebar2-image{
+    padding-bottom: 30px;
+    width: 70%;
+  }
+
+
+ /*Footer styling*/
+ .attribution { 
+  color: var(--White);
+  background-color: var(--DarkPurple);
+  font-size: 1.125rem; text-align: center; 
+  font-family: var(--font-family);
+  width: 300px;
+  height: 120px;
+  margin: auto;
+  padding: 25px;
+
+}
+.attribution a { 
+  color: black; 
+  text-decoration: none;
+}
+}
